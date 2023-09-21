@@ -14,7 +14,7 @@ function list(clients) {
   `
   );
 
-  return clientStrings.join(""); // Join the array into a single string
+  return clientStrings.join("");
 }
 
 function order(clients, property) {
@@ -33,7 +33,7 @@ function total(clients) {
   return clients.reduce((sum, client) => sum + client.balance, 0);
 }
 
-function info(clients, index) {
+function info(index) {
   console.log(clients);
   return clients.find((client) => client.index === index);
 }
